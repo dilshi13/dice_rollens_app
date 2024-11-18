@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-void addTwoNumbers(double numOne,double numTwo){
-
-  //add two numbers
-  double sum=numOne + numTwo;
-
-  //print the sum
-  print(sum);
-
-}
-
 void main(){
-  //runApp();
-  addTwoNumbers(5.7,4.6);
+runApp(MaterialApp(
+home: HellowWorldApp(),
+));
 }
+  class HellowWorldApp extends StatelessWidget {
+  const HellowWorldApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
+
