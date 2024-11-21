@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main(){
-runApp(MaterialApp(
+runApp(const MaterialApp(
 home: HellowWorldApp(),
 ));
 }
@@ -10,7 +10,13 @@ home: HellowWorldApp(),
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar:AppBar(
+        title: Text('This is the App Bar!'),
+        backgroundColor: Colors.blue.shade400,
+      ),
+    );
+    
   }
 }
 
