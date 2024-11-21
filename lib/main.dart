@@ -1,22 +1,19 @@
 import 'package:flutter/material.dart';
 
-void main(){
-runApp(const MaterialApp(
-home: HellowWorldApp(),
-));
+void main() {
+  // addTwoNumbers(number2: 4.5, number1: 6.0);
+  runApp(MaterialApp(
+    home: HelloWorldApp(),
+  ));
 }
-  class HellowWorldApp extends StatelessWidget {
-  const HellowWorldApp({super.key});
+
+class HelloWorldApp extends StatelessWidget {
+  const HelloWorldApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(
-        title: Text('This is the App Bar!'),
-        backgroundColor: Colors.blue.shade400,
-      ),
+      body: Center(child: Text('Hello World!')),
     );
-    
   }
 }
-
